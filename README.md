@@ -13,7 +13,7 @@ python3 make_image.py   # regenerates entry.png (1024×1024)
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py   # writes out/entry.png
 ```
 
-`main.py` is standard-library only and deterministic: it decodes the embedded PNG and writes it to `MAKEFUN_OUTPUT_DIR` (or `/output`) as `entry.png`, with no network access.
+`main.py` is standard-library only and deterministic: it copies `entry.png` to `MAKEFUN_OUTPUT_DIR` (or `/output`) as `entry.png`, with no network access.
 
 ---
 
